@@ -26,15 +26,15 @@ markdown# Day 03 - [오늘의 주제]
 
 ### 정보량에서부터 VAE Loss 까지 이어지는 수리적 흐름 
 
-- I(x) = -log P(x)                    [정보량]
--     ↓ (평균)
-- H(X) = E[I(X)]                      [엔트로피]
--     ↓ (비교)  
-- D_KL(P||Q) = E_P[log(P/Q)]          [KL Divergence]
--      ↓ (하한)
-- ELBO = E_q[log p(x|z)] - D_KL(...)  [ELBO]
--      ↓ (최적화)
-- min(-ELBO)                          [VAE Loss]
+I(x) = -log P(x)                    [정보량]
+     ↓ (평균)
+H(X) = E[I(X)]                      [엔트로피]
+     ↓ (비교)  
+D_KL(P||Q) = E_P[log(P/Q)]          [KL Divergence]
+     ↓ (하한)
+ELBO = E_q[log p(x|z)] - D_KL(...)  [ELBO]
+     ↓ (최적화)
+min(-ELBO)                          [VAE Loss]
 
 ## 🤔 어려웠던 점
 
